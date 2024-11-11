@@ -1,0 +1,28 @@
+
+/* general styles */
+
+.card-scroller{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 22%;
+}
+
+
+/* media queries for adaptive layout */
+
+@media screen and (min-width: 769px){
+    .card-scroller{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 52%;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .card-scroller{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 100%;
+    }
+}
+
