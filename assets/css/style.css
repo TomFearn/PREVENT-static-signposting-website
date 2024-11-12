@@ -7,7 +7,7 @@
 
 /* general styles */
 main{
-    padding: 60px 20% 0 20%;
+    padding: 40px 8% 0 8%;
 }
 
 
@@ -43,8 +43,8 @@ main{
 .icon{
     max-height: 40px;
     position: absolute;
-    bottom: 8px;
-    left: 20%;
+    top: 8px;
+    left: 1%;
 }
 
 /* inline scroller styles */
@@ -83,6 +83,18 @@ main{
 /* media queries for adaptive layout */
 
 @media screen and (min-width: 769px){
+    .icon{
+        left: 4%;
+    }
+    
+    div, .navbar-nav{
+        top: 6px;
+    }
+
+    a, .nav-link{
+        margin-left: 3%;
+    }
+
     .card-scroller{
         display: grid;
         grid-auto-flow: column;
@@ -91,6 +103,14 @@ main{
 }
 
 @media screen and (min-width: 1280px){
+    main{
+        padding: 60px 20% 0 20%;
+    }
+
+    .icon{
+        left: 20%;
+    }
+    
     .card-scroller{
         display: grid;
         grid-auto-flow: column;
