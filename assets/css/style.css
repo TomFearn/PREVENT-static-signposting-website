@@ -50,8 +50,7 @@ nav, .navbar{
 /* header styles */
 .header{
     position: relative;
-    background-image: url(assets/images/SAFEGUARD-hero-image.webp);
-    background-size: cover;
+    background: url(../images/SAFEGUARD-hero-image.webp) no-repeat center;
     height: 600px;
     display: flex;
     justify-content: center;
@@ -134,7 +133,7 @@ nav, .navbar{
     }
 
     div, .dropdown{
-        top: 0px;
+        top: 20px;
     }
 
     /* inline scroller styles */
@@ -152,6 +151,11 @@ nav, .navbar{
     }
 
     /* header styles */
+    .header{
+        height: 1008px;
+        background-size: cover;
+    }
+    
     .header h1{
         top: 30px;
     }
