@@ -15,6 +15,13 @@ main{
     display: grid;
 }
 
+/* header styles */
+.header{
+    background-image: url(assets/images/SAFEGUARD-hero-image.png);
+    background-size: cover;
+    size: 100% 80%;
+}
+
 /* inline scroller styles */
 .card-scroller{
     display: grid;
