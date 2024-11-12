@@ -1,11 +1,14 @@
 
 /* general styles */
-
+main{
+    padding:0 20%;
+}
 
 /* inline scroller styles */
 .card-scroller{
     display: grid;
     gap: 1rem;
+    padding: 2px 0;
     grid-auto-flow: column;
     grid-auto-columns: 92%;
     overflow-x: auto;
@@ -48,7 +51,7 @@
     .card-scroller{
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 15%;
+        grid-auto-columns: 23%;
     }
 }
 
