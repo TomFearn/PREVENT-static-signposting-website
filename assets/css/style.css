@@ -126,6 +126,10 @@
         padding: 60px 20% 0 20%;
     }
 
+    .header h1{
+        top: 30px;
+    }
+
     /* navbar styles */
     .icon{
         left: 20%;
