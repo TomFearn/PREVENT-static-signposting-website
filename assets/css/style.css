@@ -4,6 +4,10 @@ main{
     padding:0 20%;
 }
 
+.container{
+    display: grid;
+}
+
 /* inline scroller styles */
 .card-scroller{
     display: grid;
