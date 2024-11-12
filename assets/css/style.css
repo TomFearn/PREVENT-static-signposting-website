@@ -16,10 +16,28 @@ main{
 }
 
 /* header styles */
-.header{
+.header {
+    position: relative;
     background-image: url(assets/images/SAFEGUARD-hero-image.png);
     background-size: cover;
-    size: 100% 80%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header p {
+    margin-top: 300px;
 }
 
 /* inline scroller styles */
