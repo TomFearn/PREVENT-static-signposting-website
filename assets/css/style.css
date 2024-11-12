@@ -1,22 +1,54 @@
-/* colors
-#69c172 green
+/* 
+Colors:
+#93AB5E light green
+#799967 dark green
 #f3ebce white
-#0073bc blue
+#335583 blue
 */
 
 
 /* general styles */
 
+html, body{
+    background-color: #93AB5E;
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    padding: 60px 10px 0 10px;
+}
+
 .custom-container{
-    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 15px 20px 2px 20px;
+    background-color: #799967;
 }
 
 .title{
     margin-left: 1rem;
 }
 
+/* navbar styles */
+
+.icon{
+    max-height: 40px;
+    position: fixed;
+    top: 8px;
+    left: 1%;
+}
+
+nav, .navbar{
+    background-color: #f3ebce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* header styles */
-.header {
+.header{
     position: relative;
     background-image: url(assets/images/SAFEGUARD-hero-image.webp);
     background-size: cover;
@@ -26,36 +58,30 @@
     align-items: center;
 }
 
-.header h1 {
+.header h1{
     position: absolute;
     top: 60px;
     width: 100%;
     text-align: center;
     font-size: 3rem;
-    margin: 0;
 }
 
 .header p {
-    margin-top: 300px;
-}
-
-/* navbar styles */
-
-.icon{
-    max-height: 40px;
     position: absolute;
-    top: 8px;
-    left: 1%;
+    bottom: 30px;
+    width: 90%;
+    text-align: center;
+    text-wrap: wrap;
 }
+
 
 /* inline scroller styles */
 .card-scroller{
     display: grid;
-    /* gap: 1rem; */
+    gap: 10px;
     padding: 2px 0;
-    max-width: 100%;
     grid-auto-flow: column;
-    grid-auto-columns: 92%;
+    grid-auto-columns: 94%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 }
@@ -73,9 +99,8 @@
     display: grid;
     gap: 0.7rem;
     padding: 1rem;
-    background-color: aquamarine;
+    background-color: #335583;
     border-radius: 10px;
-    margin-left: 20px;
 }
 
 .card > img{
@@ -86,10 +111,10 @@
 /* footer styles */
 .footer{
     background-color: #f3ebce;
-    bottom: 0;
     width: 100%;
     height: 80px;
     margin-top: 20px;
+    position: flow;
 }
 
 /* media queries for adaptive layout */
@@ -97,7 +122,7 @@
 @media screen and (min-width: 769px){
     /* navbar styles */
     .icon{
-        left: 4%;
+        left: 1%;
     }
     
     div, .navbar-nav{
@@ -116,30 +141,39 @@
     .card-scroller{
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 45%;
+        grid-auto-columns: 48%;
     }
 }
 
 /* large screens */
 @media screen and (min-width: 1280px){
     main{
-        padding: 60px 20% 0 20%;
+        padding: 60px 10px 0 10px;
     }
 
+    /* header styles */
     .header h1{
         top: 30px;
     }
 
+    .header p{
+        width: 50%;
+    }
+
     /* navbar styles */
     .icon{
-        left: 20%;
+        left: 20px;
+        top: 18px;
     }
 
     /* inline scroller styles */
     .card-scroller{
         display: grid;
+        gap: 0.4%;
         grid-auto-flow: column;
-        grid-auto-columns: 23%;
+        grid-auto-columns: 24.7%;
     }
+
+
 }
 
