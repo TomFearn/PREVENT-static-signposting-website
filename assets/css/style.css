@@ -81,8 +81,9 @@ main{
 }
 
 /* media queries for adaptive layout */
-
+/* medium size screens */
 @media screen and (min-width: 769px){
+    /* navbar styles */
     .icon{
         left: 4%;
     }
@@ -95,6 +96,7 @@ main{
         margin-left: 3%;
     }
 
+    /* inline scroller styles */
     .card-scroller{
         display: grid;
         grid-auto-flow: column;
@@ -102,15 +104,18 @@ main{
     }
 }
 
+/* large screens */
 @media screen and (min-width: 1280px){
     main{
         padding: 60px 20% 0 20%;
     }
 
+    /* navbar styles */
     .icon{
         left: 20%;
     }
     
+    /* inline scroller styles */
     .card-scroller{
         display: grid;
         grid-auto-flow: column;
