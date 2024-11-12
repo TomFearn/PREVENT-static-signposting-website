@@ -1,7 +1,7 @@
 /* colors
 #69c172 green
 #f3ebce white
-#0073bc
+#0073bc blue
 */
 
 
@@ -82,6 +82,15 @@ main{
     object-fit: cover;
 }
 
+/* footer styles */
+.footer{
+    background-color: #f3ebce;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+}
+
 /* media queries for adaptive layout */
 /* medium size screens */
 @media screen and (min-width: 769px){
@@ -121,10 +130,6 @@ main{
         left: 20%;
     }
 
-    nav{
-        max-height: 50px;
-    }
-    
     /* inline scroller styles */
     .card-scroller{
         display: grid;
