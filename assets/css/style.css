@@ -18,7 +18,7 @@ main{
 /* header styles */
 .header {
     position: relative;
-    background-image: url(assets/images/SAFEGUARD-hero-image.png);
+    background-image: url(assets/images/SAFEGUARD-hero-image.webp);
     background-size: cover;
     height: 600px;
     display: flex;
@@ -38,6 +38,13 @@ main{
 
 .header p {
     margin-top: 300px;
+}
+
+.icon{
+    max-height: 40px;
+    position: absolute;
+    bottom: 8px;
+    left: 20%;
 }
 
 /* inline scroller styles */
