@@ -1,8 +1,15 @@
+/* colors
+#69c172 green
+#f3ebce white
+#0073bc
+*/
+
 
 /* general styles */
 main{
-    padding:0 20%;
+    padding: 60px 20% 0 20%;
 }
+
 
 .container{
     display: grid;
