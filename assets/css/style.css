@@ -7,8 +7,12 @@
 
 /* general styles */
 
-.container{
-    display: grid;
+.custom-container{
+    margin-left: 1rem;
+}
+
+.title{
+    margin-left: 1rem;
 }
 
 /* header styles */
@@ -24,10 +28,9 @@
 
 .header h1 {
     position: absolute;
-    top: 20px;
+    top: 60px;
     width: 100%;
     text-align: center;
-    color: white;
     font-size: 3rem;
     margin: 0;
 }
