@@ -40,6 +40,8 @@ main{
     margin-top: 300px;
 }
 
+/* navbar styles */
+
 .icon{
     max-height: 40px;
     position: absolute;
@@ -96,6 +98,10 @@ main{
         margin-left: 3%;
     }
 
+    div, .dropdown{
+        top: 0px;
+    }
+
     /* inline scroller styles */
     .card-scroller{
         display: grid;
@@ -113,6 +119,10 @@ main{
     /* navbar styles */
     .icon{
         left: 20%;
+    }
+
+    nav{
+        max-height: 50px;
     }
     
     /* inline scroller styles */

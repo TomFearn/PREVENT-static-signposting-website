@@ -23,8 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav  mx-auto">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="#">Warning signs</a>
-                    <a class="nav-link" href="#">Resources</a>
+                    <a class="nav-link warning-signs" href="#warning-signs">Warning signs</a>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#online-resources">Online</a></li>
+                            <li><a class="dropdown-item" href="#local-resources">Local</a></li>
+                          </ul>
+                    </div>
                     <a class="nav-link" href="#">Contact</a>
                 </div>
             </div>
@@ -43,14 +51,16 @@
         </section>
         <!-- page intro -->
         <section>
+            <h2>Welcome to Safeguard</h2>
             <p>intro section</p>
         </section>
         <!-- warning signs to look out for -->
-        <section>
+        <section id="warning-signs">
+            <h2>Warning signs</h2>
             <p>warning signs section</p>
         </section>
         <!-- online resources cards -->
-        <section>
+        <section id="online-resources">
             <p>online resources cards</p>
             <div class="card-scroller snaps-inline">
                 <div class="card">1</div>
@@ -60,7 +70,7 @@
             </div>
         </section>
         <!-- local resources cards -->
-        <section>
+        <section id="local-resources">
             <p>local resources cards</p>
             <div class="card-scroller snaps-inline">
                 <div class="card">1</div>
