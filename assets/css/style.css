@@ -1,12 +1,38 @@
 
 /* general styles */
 
+
+/* inline scroller styles */
 .card-scroller{
     display: grid;
+    gap: 1rem;
     grid-auto-flow: column;
-    grid-auto-columns: 22%;
+    grid-auto-columns: 92%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
 }
 
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+}
+
+.snaps-inline > *{
+    scroll-snap-align: start;
+}
+
+.card{
+    display: grid;
+    gap: 0.7rem;
+    padding: 1rem;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.card > img{
+    max-width: 100%;
+    object-fit: cover;
+}
 
 /* media queries for adaptive layout */
 
@@ -14,7 +40,7 @@
     .card-scroller{
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 52%;
+        grid-auto-columns: 45%;
     }
 }
 
@@ -22,7 +48,7 @@
     .card-scroller{
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 100%;
+        grid-auto-columns: 15%;
     }
 }
 
