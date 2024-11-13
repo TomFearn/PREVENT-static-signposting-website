@@ -136,8 +136,8 @@ details, .bold-text > *{
 /* inline scroller styles */
 .card-scroller{
     display: grid;
-    gap: 10px;
     padding: 2px 0;
+    gap: 10px;
     grid-auto-flow: column;
     grid-auto-columns: 94%;
     overflow-x: auto;
@@ -155,10 +155,9 @@ details, .bold-text > *{
 
 .card{
     display: grid;
-    gap: 0.7rem;
     padding: 1rem;
     background-color: #335583;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .card > img{
