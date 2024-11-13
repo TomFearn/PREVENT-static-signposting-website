@@ -47,6 +47,11 @@ nav, .navbar{
     align-items: center;
 }
 
+.dropdown-menu{
+    background-color: transparent;
+    border: 0;
+}
+
 /* header styles */
 .header{
     position: relative;
@@ -133,7 +138,9 @@ nav, .navbar{
         margin-left: 3%;
     }
 
-    
+    .dropdown-toggle{
+        top: 0px;
+    }    
 
     /* inline scroller styles */
     .card-scroller{
@@ -165,8 +172,8 @@ nav, .navbar{
 
     /* navbar styles */
     .icon{
-        left: 20px;
-        top: 18px;
+        left: 10px;
+        top: 8px;
     }
 
     div, .dropdown{
