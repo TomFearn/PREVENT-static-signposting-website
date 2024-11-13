@@ -21,14 +21,22 @@ main{
     padding: 60px 10px 0 10px;
 }
 
-.custom-container{
-    margin-bottom: 1rem;
-    padding: 15px 20px 2px 20px;
+.custom-section{
     background-color: #799967;
+}
+
+.custom-container{
+    margin-bottom: 10px;
+    padding: 10px 20px 10px 20px;
+    
 }
 
 .title{
     margin-left: 1rem;
+}
+
+.bold-text{
+    font-style: bold;
 }
 
 /* navbar styles */
@@ -61,6 +69,7 @@ nav, .navbar{
     justify-content: center;
     align-items: center;
     top: 20px;
+    margin-bottom: 20px;
 }
 
 .header h1{
@@ -79,6 +88,10 @@ nav, .navbar{
     text-wrap: wrap;
 }
 
+/* intro styles */
+#intro > p{
+    margin-bottom: 5px;
+}
 
 /* inline scroller styles */
 .card-scroller{
