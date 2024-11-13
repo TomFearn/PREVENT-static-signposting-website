@@ -23,20 +23,21 @@ main{
 
 .custom-section{
     background-color: #799967;
+    border-radius: 3px;
 }
 
 .custom-container{
     margin-bottom: 10px;
-    padding: 10px 20px 10px 20px;
-
+    padding: 5px 10px;
 }
+
 
 .title{
     margin-left: 1rem;
 }
 
 .bold-text{
-    font-style: bold;
+    font-weight: 600;
 }
 
 /* navbar styles */
@@ -64,7 +65,7 @@ main{
 }
 
 .dropdown-menu{
-    background-color: transparent;
+    background-color: #f3ebce;
     border: 0;
     margin-top: 1rem;
 }
@@ -101,6 +102,36 @@ main{
 #intro > p{
     margin-bottom: 5px;
 }
+
+#intro-title{
+    font-size: 1.5rem;
+}
+
+/* warning signs section */
+
+details > ul{
+    margin-bottom: 0;
+}
+
+ul > details{
+    background-color: #799967 ;
+    margin: 10px 8px;
+    border-radius: 3px;
+    box-shadow: 0 3px 7px black;
+}
+
+.custom-container > details{
+    padding-right: 10px;
+    background-color: #93AB5E ;
+    margin: 10px 0px;
+    border-radius: 3px;
+    box-shadow: 0 3px 7px black;
+}
+
+details, .bold-text > *{
+    padding: 5px 0 5px 5px;
+}
+
 
 /* inline scroller styles */
 .card-scroller{
@@ -212,6 +243,7 @@ main{
         display: flex;
         margin-left: 16px;
     }
+
 
     /* inline scroller styles */
     .card-scroller{
