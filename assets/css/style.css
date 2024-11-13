@@ -18,7 +18,7 @@ html, body{
 }
 
 main{
-    padding: 60px 10px 0 10px;
+    padding: 56px 10px 0 10px;
 }
 
 .custom-section{
@@ -28,7 +28,7 @@ main{
 .custom-container{
     margin-bottom: 10px;
     padding: 10px 20px 10px 20px;
-    
+
 }
 
 .title{
@@ -43,32 +43,41 @@ main{
 
 .icon{
     max-height: 40px;
-    position: fixed;
     top: 8px;
     left: 1%;
 }
 
-nav, .navbar{
+.navbar-right{
+    display: none;
+}
+
+.navbar{
     background-color: #f3ebce;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.nav-link .navbar-brand .navbar-right{
+    margin: 0 1.5%;
+    text-wrap: nowrap;
+}
+
 .dropdown-menu{
     background-color: transparent;
     border: 0;
+    margin-top: 1rem;
 }
+
 
 /* header styles */
 .header{
     position: relative;
-    background: url(../images/SAFEGUARD-hero-image.webp) no-repeat center;
-    height: 600px;
+    background: url(../images/SAFEGUARD-hero-image.webp) no-repeat center / cover;
+    height: 608px;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 20px;
     margin-bottom: 20px;
 }
 
@@ -147,13 +156,15 @@ nav, .navbar{
         top: 6px;
     }
 
-    a, .nav-link{
-        margin-left: 3%;
-    }
 
     .dropdown-toggle{
         top: 0px;
     }    
+
+    div, .dropdown{
+        top: 0px;
+    }
+
 
     /* inline scroller styles */
     .card-scroller{
@@ -163,18 +174,25 @@ nav, .navbar{
     }
 }
 
-/* large screens */
-@media screen and (min-width: 1280px){
-    main{
-        padding: 60px 10px 0 10px;
+/* for hero image sizing over its max width */
+@media screen and (min-width: 1008px){
+    .header{
+        width: auto;
+        height: auto;
     }
 
-    /* header styles */
-    .header{
-        height: 1008px;
-        background-size: cover;
+    .image-fill{
+        height: calc(100vw*(608/1008));
+        width: 100%;
     }
-    
+
+}
+
+/* large screens */
+@media screen and (min-width: 1280px){
+
+    /* header styles */
+
     .header h1{
         top: 30px;
     }
@@ -188,15 +206,12 @@ nav, .navbar{
         left: 10px;
         top: 8px;
     }
-
-    div, .dropdown{
-        top: 0px;
+    
+    .navbar-right{
+        opacity: 0;
+        display: flex;
+        margin-left: 16px;
     }
-
-    .nav-link{
-        text-wrap: nowrap;
-    }
-
 
     /* inline scroller styles */
     .card-scroller{
