@@ -170,9 +170,37 @@ details, .bold-text > *{
 .footer{
     background-color: #f3ebce;
     width: 100%;
-    height: 80px;
+    height: auto;
+    padding: 10px;
+    bottom: 0;
     margin-top: 20px;
-    position: flow;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-box{
+    width: 500px;
+    height: auto;
+    text-wrap: wrap;
+    overflow-wrap: normal;
+    margin-top: 20px;
+}
+
+.social-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-box i{
+    font-size: 150%;
+    padding: 5%;
+    color: black;
+}
+
+.footer, p{
+    margin-bottom: 0;
 }
 
 /* media queries for adaptive layout */
@@ -217,6 +245,21 @@ details, .bold-text > *{
         width: 100%;
     }
 
+
+}
+
+/* media querie for stytling footer */
+@media screen and (min-width: 990px){
+   /* foter styles */
+   .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+   
+    .footer-box{
+        width: 300px;
+    }
 }
 
 /* large screens */
@@ -252,7 +295,6 @@ details, .bold-text > *{
         grid-auto-flow: column;
         grid-auto-columns: 24.7%;
     }
-
 
 }
 
