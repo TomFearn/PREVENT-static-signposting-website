@@ -28,8 +28,8 @@ h1 h2 h3{
 
 .link-buffer{
     display:block;
-    height:66px;
-    margin-top:-66px;
+    height:80px;
+    margin-top:-80px;
     visibility:hidden;
  }
 
