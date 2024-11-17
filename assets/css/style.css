@@ -14,12 +14,24 @@ html, body{
     min-height: 100%;
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    font-family: 'Sarabun', sans-serif;
 }
 
 main{
     padding: 56px 10px 0 10px;
 }
+
+h1 h2 h3{
+    font-family: 'Sen', sans-serif;
+}
+
+.link-buffer{
+    display:block;
+    height:66px;
+    margin-top:-66px;
+    visibility:hidden;
+ }
 
 .custom-section{
     background-color: #799967;
@@ -28,7 +40,7 @@ main{
 
 .custom-container{
     margin-bottom: 10px;
-    padding: 5px 10px;
+    padding: 10px 10px 5px 10px;
     box-shadow: 0px 3px 5px;
 }
 
@@ -104,11 +116,19 @@ main{
     margin-bottom: 5px;
 }
 
+#intro{
+    padding: 5px 10px;
+}
+
 #intro-title{
     font-size: 1.5rem;
 }
 
 /* warning signs section */
+
+ul{
+    list-style-type: none;
+}
 
 details > ul{
     margin-bottom: 0;
@@ -176,7 +196,7 @@ details, .bold-text > *{
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: top;
     justify-content: center;
 }
 
@@ -185,7 +205,9 @@ details, .bold-text > *{
     height: auto;
     text-wrap: wrap;
     overflow-wrap: normal;
-    margin-top: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .social-box{
