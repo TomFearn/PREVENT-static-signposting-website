@@ -110,10 +110,13 @@ h1, h2, h3{
     width: 90%;
     text-align: center;
     text-wrap: wrap;
+    background-color: rgba(243, 235, 206, 0.6);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /* intro styles */
-#intro > p{
+#intro > details > p{
     margin-bottom: 5px;
 }
 
@@ -123,6 +126,8 @@ h1, h2, h3{
 
 #intro-title{
     font-size: 1.5rem;
+    font-weight: 600;
+    color: #335583;
 }
 
 /* warning signs section */
@@ -179,6 +184,18 @@ details .bold-text > *{
     display: grid;
     padding: 1rem;
     background-color: #335583;
+    border-radius: 5px;
+    color: #f3ebce;
+}
+
+.card a{
+    text-decoration: none;
+    color: #93AB5E;
+}
+
+a:hover{
+    color: #f3ebce;
+    background-color: #93AB5E;
     border-radius: 5px;
 }
 
@@ -268,8 +285,8 @@ details .bold-text > *{
         width: 100%;
     }
 
-    h1{
-        top: calc(100vw);
+    .header h1{
+        top: calc(100vw * 0.06);
     }
 }
 
@@ -291,10 +308,6 @@ details .bold-text > *{
 @media screen and (min-width: 1280px){
 
     /* header styles */
-
-    .header h1{
-        top: 30px;
-    }
 
     .header p{
         width: 50%;
