@@ -9,7 +9,7 @@ Colors:
 
 /* general styles */
 
-html, body{
+body{
     background-color: #93AB5E;
     min-height: 100%;
     margin: 0;
@@ -22,8 +22,9 @@ main{
     padding: 56px 10px 0 10px;
 }
 
-h1 h2 h3{
+h1, h2, h3{
     font-family: 'Sen', sans-serif;
+    color: #335583;
 }
 
 .link-buffer{
@@ -103,7 +104,7 @@ h1 h2 h3{
     font-size: 3rem;
 }
 
-.header p {
+.header p{
     position: absolute;
     bottom: 30px;
     width: 90%;
@@ -149,7 +150,7 @@ ul > details{
     box-shadow: 0 3px 7px black;
 }
 
-details, .bold-text > *{
+details .bold-text > *{
     padding: 5px 0 5px 5px;
 }
 
@@ -221,7 +222,7 @@ details, .bold-text > *{
     color: black;
 }
 
-.footer, p{
+.footer p{
     margin-bottom: 0;
 }
 
@@ -255,7 +256,7 @@ details, .bold-text > *{
     }
 }
 
-/* for hero image sizing over its max width */
+/* for hero section sizing over its max width */
 @media screen and (min-width: 1008px){
     .header{
         width: auto;
@@ -267,10 +268,12 @@ details, .bold-text > *{
         width: 100%;
     }
 
-
+    h1{
+        top: calc(100vw);
+    }
 }
 
-/* media querie for stytling footer */
+/* media querie for styling footer */
 @media screen and (min-width: 990px){
    /* foter styles */
    .footer{
