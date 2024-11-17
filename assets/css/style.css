@@ -81,7 +81,7 @@ main{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-}
+} 
 
 .header h1{
     position: absolute;
@@ -121,9 +121,9 @@ ul > details{
     box-shadow: 0 3px 7px black;
 }
 
-.custom-container > details{
+.custom-container > details > ul > details{
+    background-color: #93AB5E;
     padding-right: 10px;
-    background-color: #93AB5E ;
     margin: 10px 0px;
     border-radius: 3px;
     box-shadow: 0 3px 7px black;
